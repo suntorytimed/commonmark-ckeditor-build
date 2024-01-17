@@ -59,6 +59,9 @@ export const opImageUploadPlugins = [
 
 export const ckMermaid = [
 	Mermaid,
+	MermaidToolbar,
+	MermaidEditing,
+	MermaidUI,
 	icons
 ];
 
