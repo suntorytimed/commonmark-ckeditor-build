@@ -1,0 +1,3 @@
+[submodule "src/plugins/ckeditor5-mermaid"]
+	path = src/plugins/ckeditor5-mermaid
+	url = https://github.com/ckeditor/ckeditor5-mermaid.git
