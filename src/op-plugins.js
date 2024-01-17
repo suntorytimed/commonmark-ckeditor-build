@@ -40,7 +40,8 @@ import { ImageResize } from '@ckeditor/ckeditor5-image';
 import OpCustomCssClassesPlugin from "./plugins/op-custom-css-classes-plugin";
 import { ImageBlock } from '@ckeditor/ckeditor5-image';
 import { ImageInline } from '@ckeditor/ckeditor5-image';
-import Mermaid from './plugins/ckeditor5-mermaid';
+import { Mermaid } from './plugins/ckeditor5-mermaid';
+import { icons } from './plugins/ckeditor5-mermaid';
 
 // We divide our plugins into separate concerns here
 // in order to enable / disable each group by configuration
@@ -54,6 +55,11 @@ export const opMacroPlugins = [
 export const opImageUploadPlugins = [
 	OpUploadPlugin,
 	OPAttachmentListenerPlugin
+];
+
+export const ckMermaid = [
+	Mermaid,
+	icons
 ];
 
 export const builtinPlugins = [
@@ -89,7 +95,7 @@ export const builtinPlugins = [
 	OPPreviewPlugin,
 	OPSourceCodePlugin,
 
-	Mermaid,
+	ckMermaid,
 
 	CommonMark,
 	Table,
